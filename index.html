@@ -3,84 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarketTek - Tam Entegre Operasyon Sistemi</title>
+    <title>MarketTek Entegre Operasyon Sistemi</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f1f5f9; margin: 0; padding: 10px; }
+        .container { max-width: 500px; margin: auto; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 15px; }
+        h3 { margin-top: 0; font-size: 16px; color: #1e293b; border-bottom: 2px solid #f1f5f9; padding-bottom: 8px; }
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+        button { flex: 1; padding: 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; color: white; transition: 0.3s; }
+        .btn-blue { background-color: #2563eb; }
+        .btn-red { background-color: #dc2626; }
+        .btn-whatsapp { background-color: #25d366; width: 100%; margin-top: 10px; font-size: 16px; }
+        input { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; }
+        .stat-box { flex: 1; text-align: center; padding: 15px; border-radius: 8px; }
+        #login-screen { display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f1f5f9; }
+        .login-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 80%; max-width: 300px; text-align: center; }
+        #app-content { display: none; }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f1f5f9; margin: 0; padding: 15px;">
+<body>
 
-    <div style="max-width: 900px; margin: auto;">
-        
-        <!-- ÜST BAŞLIK -->
-        <div style="background: #0f172a; color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
-            <h1 style="margin: 0; font-size: 22px;">🛒 MarketTek Operasyon & Danışmanlık</h1>
-            <p style="margin: 5px 0 0 0; color: #94a3b8; font-size: 13px;">Türkiye Geneli Zincir Market Teknoloji ve Saha Yönetim Ağı</p>
-        </div>
-
-        <!-- 1. BÖLÜM: ŞUBE ACİL ÇÖZÜM BUTONLARI -->
-        <div style="background: white; padding: 20px; border-bottom: 1px solid #e2e8f0;">
-            <h2 style="color: #1e293b; font-size: 16px; margin-top: 0;">⚡ 1. Şube İçi Pratik Çözüm Butonları</h2>
-            <div style="display: flex; gap: 10px;">
-                <button style="flex: 1; padding: 12px 5px; background-color: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 13px;">Kasa Kilitlendi</button>
-                <button style="flex: 1; padding: 12px 5px; background-color: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 13px;">İnternet Koptu</button>
-                <button style="flex: 1; padding: 12px 5px; background-color: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 13px;">Barkod Okumuyor</button>
-            </div>
-        </div>
-
-        <!-- 2. BÖLÜM: SAHA EKİBİ ÇAĞIRMA FORMU -->
-        <div style="background: white; padding: 20px; border-bottom: 1px solid #e2e8f0;">
-            <h2 style="color: #1e293b; font-size: 16px; margin-top: 0;">🚨 2. Saha Ekibi Talep Formu (Şube Ekranı)</h2>
-            <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0;">
-                <label style="font-weight: bold; color: #334155; font-size: 13px;">Şube Adı / Kodu:</label><br>
-                <input type="text" value="Şube #402 - Kadıköy" style="width: 100%; padding: 8px; margin-top: 4px; margin-bottom: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;"><br>
-
-                <label style="font-weight: bold; color: #334155; font-size: 13px;">Arızalı Sistem / Cihaz:</label><br>
-                <input type="text" value="Ana Sunucu Donanım Arızası" style="width: 100%; padding: 8px; margin-top: 4px; margin-bottom: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;"><br>
-
-                <button style="background-color: #dc2626; color: white; border: none; padding: 10px; font-size: 14px; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%;">Bölgesel Saha Ekibini Yönlendir</button>
-            </div>
-        </div>
-
-        <!-- 3. BÖLÜM: CANLI TAKİP EKRANI -->
-        <div style="background: white; padding: 20px; border-bottom: 1px solid #e2e8f0;">
-            <h2 style="color: #1e293b; font-size: 16px; margin-top: 0;">🔄 3. Canlı Saha Takip Ekranı (#SAHA-9942)</h2>
-            <div style="background-color: #f1f5f9; padding: 15px; border-radius: 6px; border-left: 4px solid #2563eb; font-size: 14px;">
-                <p style="margin: 3px 0; color: #334155;"><strong>Servis Sağlayıcı:</strong> Anadolu Teknik Bilişim</p>
-                <p style="margin: 3px 0; color: #334155;"><strong>Atanan Uzman:</strong> Hakan Demir (Yolda - Tahmini: 25 Dk)</p>
-            </div>
-        </div>
-
-        <!-- 4. BÖLÜM: YÖNETİCİ (ADMIN) PANELİ -->
-        <div style="background: white; padding: 20px; border-bottom: 1px solid #e2e8f0;">
-            <h2 style="color: #1e293b; font-size: 16px; margin-top: 0;">👑 4. Merkezi Yönetici Paneli Özet Özeti</h2>
-            <div style="display: flex; gap: 10px; text-align: center;">
-                <div style="flex: 1; background: #eff6ff; padding: 10px; border-radius: 6px;">
-                    <span style="font-size: 12px; color: #1e40af;">Bugünkü Arıza</span>
-                    <h3 style="margin: 5px 0 0 0; color: #1e3a8a;">14</h3>
-                </div>
-                <div style="flex: 1; background: #fef3c7; padding: 10px; border-radius: 6px;">
-                    <span style="font-size: 12px; color: #92400e;">Yoldaki Ekip</span>
-                    <h3 style="margin: 5px 0 0 0; color: #78350f;">5</h3>
-                </div>
-                <div style="flex: 1; background: #f0fdf4; padding: 10px; border-radius: 6px;">
-                    <span style="font-size: 12px; color: #166534;">Çözülen</span>
-                    <h3 style="margin: 5px 0 0 0; color: #14532d;">9</h3>
-                </div>
-            </div>
-        </div>
-
-        <!-- 5. BÖLÜM: STRATEJİK RAPORLAMA -->
-        <div style="background: white; padding: 20px; border-radius: 0 0 8px 8px;">
-            <h2 style="color: #1e293b; font-size: 16px; margin-top: 0;">📊 5. Aylık Teknoloji Performans Raporu</h2>
-            <div style="background: #f8fafc; padding: 12px; border-radius: 6px; font-size: 13px; margin-bottom: 15px;">
-                <p style="margin: 4px 0;">🖥️ POS Yazılımları Arıza Oranı: <strong>%45</strong></p>
-                <p style="margin: 4px 0;">📍 En Çok Destek Alan Şube: <strong>Şube #402 (12 Talep)</strong></p>
-            </div>
-            <div style="background-color: #eff6ff; padding: 12px; border-radius: 6px; border: 1px solid #bfdbfe;">
-                <h4 style="color: #1e40af; margin: 0 0 5px 0; font-size: 14px;">💡 Danışmanlık Önerisi:</h4>
-                <p style="color: #1e3a8a; margin: 0; font-size: 12px; line-height: 1.4;">Şube #402'deki POS yazılımının güncellenmesi, toplam arızaları %40 oranında düşürecektir.</p>
-            </div>
-        </div>
-
+<div id="login-screen">
+    <div class="login-card">
+        <h2>MarketTek Giriş</h2>
+        <input type="password" id="password" placeholder="Şifrenizi Girin">
+        <button class="btn-blue" onclick="checkPassword()">Giriş Yap</button>
+        <p style="font-size: 11px; color: #64748b; margin-top: 15px;">Varsayılan Şifre: 1234</p>
     </div>
+</div>
+
+<div id="app-content">
+    <div class="container">
+        <div style="background: #0f172a; color: white; padding: 20px; border-radius: 10px; margin-bottom: 15px; text-align: center;">
+            <div style="font-size: 22px; font-weight: bold;">🛒 MarketTek Operasyon</div>
+        </div>
+
+        <div class="card">
+            <h3>⚡ 1. Şube İçi Pratik Çözüm</h3>
+            <div class="btn-group">
+                <button class="btn-blue" onclick="sendWhatsapp('Kasa Kilitlendi sorunu bildirildi.')">Kasa Kilitlendi</button>
+                <button class="btn-blue" onclick="sendWhatsapp('İnternet Koptu bildirildi.')">İnternet Koptu</button>
+                <button class="btn-blue" onclick="sendWhatsapp('Barkod Okumuyor bildirildi.')">Barkod Okumuyor</button>
+            </div>
+            <button class="btn-whatsapp" onclick="sendWhatsapp('Merhaba, genel destek talebinde bulunuyorum.')">📞 WhatsApp Canlı Destek Hattı</button>
+        </div>
+
+        <div class="card">
+            <h3>🚨 2. Saha Ekibi Talep Formu</h3>
+            <input type="text" id="subeAdi" placeholder="Şube Adı">
+            <input type="text" id="arizaTuru" placeholder="Arıza Türü">
+            <button class="btn-red" style="width: 100%;" onclick="talepGonder()">Bölgesel Ekibi Yönlendir</button>
+        </div>
+
+        <button class="btn-red" onclick="location.reload()" style="width: 100%; margin-bottom: 20px;">🔒 Güvenli Çıkış Yap</button>
+    </div>
+</div>
+
+<script>
+    function checkPassword() {
+        if (document.getElementById('password').value === "1234") { 
+            document.getElementById('login-screen').style.display = 'none';
+            document.getElementById('app-content').style.display = 'block';
+        } else { alert("Hatalı şifre!"); }
+    }
+    function sendWhatsapp(msg) {
+        // BURAYI KENDİ NUMARANLA DEĞİŞTİR: 905321234567 formatında
+        const telefonNumarasi = "905307464450"; 
+        window.open("https://wa.me/" + telefonNumarasi + "?text=" + encodeURIComponent(msg), '_blank');
+    }
+    function talepGonder() {
+        const mesaj = "YENİ TALEP: " + document.getElementById('subeAdi').value + " - " + document.getElementById('arizaTuru').value;
+        sendWhatsapp(mesaj);
+    }
+</script>
 
 </body>
 </html>
